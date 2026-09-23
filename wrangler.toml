@@ -25,8 +25,7 @@ BSC_CHAIN_ID = "56"
 # Build configuration – Workers use the src/worker folder
 [build]
 command = "npm run build:worker"
-upload = { format = "modules", main = "dist/worker/index.js" }
 
-# Note: You will need a build step to compile the TypeScript worker to JavaScript.
-# Example script in package.json:
-# "build:worker": "tsc -p tsconfig.json --outDir dist/worker"
+[build.upload]
+format = "modules"
+main = "dist/worker/index.js"
