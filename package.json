@@ -10,13 +10,6 @@
     "build:worker": "tsc -p tsconfig.json --outDir dist/worker",
     "test": "vitest",
     "migrate": "wrangler d1 execute RESCUE_DB --local < db/migrations/20240923_create_sponsorships.sql"
-  }
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "dev:worker": "wrangler dev",
-    "test": "vitest",
-    "migrate": "wrangler d1 execute RESCUE_DB --local < db/migrations/20240923_create_sponsorships.sql"
   },
   "dependencies": {
     "react": "^18.2.0",
