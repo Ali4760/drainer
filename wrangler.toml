@@ -26,6 +26,4 @@ BSC_CHAIN_ID = "56"
 [build]
 command = "npm run build:worker"
 
-[upload]
-format = "modules"
 main = "dist/worker/index.js"
