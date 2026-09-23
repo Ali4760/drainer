@@ -6,10 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "dev:worker": "wrangler dev",
-    "build:worker": "tsc -p tsconfig.json --outDir dist/worker",
+    "dev:pages": "npx wrangler pages dev dist",
     "test": "vitest",
-    "migrate": "wrangler d1 execute RESCUE_DB --local < db/migrations/20240923_create_sponsorships.sql"
+    "migrate": "wrangler d1 execute DRAIN_DB --local < db/migrations/20240923_create_sponsorships.sql"
   },
   "dependencies": {
     "react": "^18.2.0",

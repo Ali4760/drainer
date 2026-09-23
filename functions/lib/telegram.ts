@@ -1,8 +1,11 @@
-// src/worker/telegram.ts
-/** Simple wrapper to send a message via Telegram Bot API */
-export async function sendTelegramMessage(message: string): Promise<void> {
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
+// functions/lib/telegram.ts
+
+/** Send a message via Telegram Bot API */
+export async function sendTelegramMessage(
+  token: string,
+  chatId: string,
+  message: string
+): Promise<void> {
   if (!token || !chatId) {
     console.warn('Telegram credentials not set – skipping notification');
     return;

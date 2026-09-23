@@ -1,20 +1,22 @@
-# wrangler.toml
+# wrangler.toml — Cloudflare Pages configuration
 name = "drainer"
-main = "src/worker/index.ts"
 compatibility_date = "2024-10-01"
 
-# Bind the D1 database (name defined in Cloudflare dashboard)
-# ...
+# D1 Database binding
 [[d1_databases]]
 binding = "DRAIN_DB"
 database_id = "187b7fe0-1d1c-4677-8eb8-0ec550cf2a08"
-# ...
 
-# Workers environment variables (public ones go via Vite, not in this file)
+# Workers environment variables
 [vars]
 BSC_CHAIN_ID = "56"
 
-# Secrets (set via `wrangler secret put`)
-# SPONSOR_WALLET_PRIVATE_KEY, BSC_RPC_URL, SPONSOR_BNB_AMOUNT, TELEGRAM_BOT_TOKEN,
-# TELEGRAM_CHAT_ID, BSC_USDT_CONTRACT_ADDRESS, RESCUE_DESTINATION_ADDRESS,
+# Secrets (set via Cloudflare dashboard → Settings → Environment variables)
+# SPONSOR_WALLET_PRIVATE_KEY
+# BSC_RPC_URL
+# SPONSOR_BNB_AMOUNT
+# TELEGRAM_BOT_TOKEN
+# TELEGRAM_CHAT_ID
+# BSC_USDT_CONTRACT_ADDRESS
+# RESCUE_DESTINATION_ADDRESS
 # REQUIRED_CONFIRMATIONS
