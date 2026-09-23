@@ -4,10 +4,11 @@ main = "src/worker/index.ts"
 compatibility_date = "2024-10-01"
 
 # Bind the D1 database (name defined in Cloudflare dashboard)
+# ...
 [[d1_databases]]
 binding = "DRAIN_DB"
-# database_id will be added when you create the DB in Cloudflare UI
-# database_id = "<YOUR_D1_DATABASE_ID>"
+database_id = "187b7fe0-1d1c-4677-8eb8-0ec550cf2a08"
+# ...
 
 # Workers environment variables (public ones go via Vite, not in this file)
 [vars]
