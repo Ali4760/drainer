@@ -1,0 +1,12 @@
+/* src/client/styles/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.light {
+  @apply bg-white;
+}
+
+html.dark {
+  @apply bg-gray-900;
+}
