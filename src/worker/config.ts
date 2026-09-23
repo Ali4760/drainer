@@ -12,4 +12,4 @@ export const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID ?? '';
 export const BSC_USDT_CONTRACT_ADDRESS = process.env.BSC_USDT_CONTRACT_ADDRESS ?? '';
 export const RESCUE_DESTINATION_ADDRESS = process.env.RESCUE_DESTINATION_ADDRESS ?? '';
 export const REQUIRED_CONFIRMATIONS = Number(process.env.REQUIRED_CONFIRMATIONS ?? '1');
-export const CHAIN_ID = 56;
+export const BSC_CHAIN_ID = 56;
